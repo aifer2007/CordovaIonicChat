@@ -1,0 +1,24 @@
+<ion-view view-title="{{chat_ctrl.matchName}}" ng-controller="ChatController as chat_ctrl">
+
+	<ion-content class="has-header padding">
+		<ol class="chat">
+			<li ng-class="{'self': item.belongsToSelf, 'other': !item.belongsToSelf}" ng-repeat="item in chat_ctrl.messages">
+				<div class="avatar"><img src="http://i.imgur.com/HYcn9xO.png" draggable="false"/></div>
+				<div class="msg">
+					<p>{{item.msg}}</p>
+				</div>
+			</li>
+			<!-- <ion-item ng-repeat="item in chat_ctrl.messages">
+				{{item.msg}}
+			</ion-item> -->
+		</ol>
+	</ion-content>
+
+	
+	<footer class="bar bar-footer item-input-inset">
+		<label class="item-input-wrapper">
+			<input type="text" id="message" name="message" ng-model="chat_ctrl.message" placeholder="Type message">
+		</label>
+		<a class="button button-icon icon ion-android-send" ng-click="sendMessage()"></a>
+	</footer>
+</ion-view>

@@ -1,0 +1,16 @@
+
+
+<ion-view view-title="Profile" ng-controller="ProfileController as profile_ctrl">
+
+  <ion-content>
+  	<div id="buttons" align="center">
+			<button type="button" id="CreateProfile" class="btn btn-default" onClick="callProfileService('UpdateProfile');">Create/Update Profile</button> 
+			<button type="button" id="UpdateProfile" class="btn btn-default" onClick="callProfileService('GetProfileData');">View My Profile</button> 
+			<br/><br/>
+		</div>
+		<div id="loading" align="center">&nbsp;<br/></div>
+		<div align="center">
+			<table id="data" class="table-responsive"></table><br/>
+		</div>
+  </ion-content>
+</ion-view>

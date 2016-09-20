@@ -1,0 +1,36 @@
+
+
+<ion-view view-title="Home" ng-controller="HomeController as home_ctrl">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-ios-chatbubble"></button>
+  </ion-nav-buttons>
+  <ion-nav-buttons side="right">
+    <button class="button button-icon ion-more" ng-click="home_ctrl.popover.show($event)">
+    </button>
+  </ion-nav-buttons>
+  <ion-content>
+    <!-- Selection Profile -->
+	<section class="selection-profile">
+	    <h2 class="selection-name text-left" id="test">User name here</h2>
+	</section>
+
+	<!-- Selection Pictures -->
+	<section class="selection-pictures">
+	    <div class="crop-container">
+	        <img src="img/pic1.jpg" name="pic1" />
+	    </div>
+
+	    <div class="crop-container">
+	        <img src="img/pic2.jpg" name="pic2" />
+	    </div>
+
+	    <div class="crop-container">
+	        <img src="img/pic3.jpg" name="pic3" />
+	    </div>
+
+	    <div class="crop-container">
+	        <img src="img/pic4.jpg" name="pic4"/>
+	    </div>
+	</section>
+  </ion-content>
+</ion-view>
